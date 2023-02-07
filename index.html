@@ -3,8 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Rock, paper, scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <p>Rock, Paper, Scissors</p>
+    </header>
+
+    <nav>
+        <div class="player-points points">
+            <h2 class="player-name">Player Name:</h2> 
+            <p class="player-pt">2</p>
+        </div>
+
+        <div class="winner">
+            <img src="man.png" alt="Man" class="man" style="display: none;">
+            <img src="woman.png" alt="Woman" class="woman" style="display: none;">
+            <img src="desktop.png" alt="Computer" class="computer" style="display: none;">
+            <p class="output-text"></p>
+        </div>
+        
+        <div class="computer-points points">
+            <h2>Computer:</h2> 
+            <p class="computer-pt">1</p>
+        </div>
+    </nav>
+
+    <section id="input">
+        <div class="container">
+            <button class="rock">
+                <img src="stone.png" alt="Rock">
+            </button>
+
+            <button class="paper">
+                <img src="paper.png" alt="Paper">
+            </button>
+
+            <button class="scissors">
+                <img src="scissors.png" alt="Scissors">
+            </button>
+        </div>
+    </section>
+
+    <section id="rounds">
+        <p>
+            Round <span class="rounds-count"></span>
+        </p>
+        <button class="playagain-btn">Play Again?</button>
+    </section>
+
+    <footer>
+        <div class="content">
+            <p>	&#169; Copyright 2023 | <a href="https://github.com/zaidahmad25" target="_blank">Zaid Ahmad</a></p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
